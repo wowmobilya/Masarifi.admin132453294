@@ -1,0 +1,12 @@
+Masarifi V5 builds upon the user-supplied WOW Expenses V4 application.
+Original application credits retained: WOW Mobilya; review Hasan Al-Halou; original development Eng. Al-Mutaz Billah Haj Shaaban.
+The user supplied the brand image through https://chatgpt.com/s/m_6ab67083e29481919e4759dba635c1c2 . Icons are resized copies, not redesigned imagery.
+JSZip v3.10.1 is included locally in assets/jszip.min.js. Copyright (c) 2009-2016 Stuart Knightley, David Duponchel, Franz Buchinger, António Afonso. Distributed under MIT or GPLv3; original license banner remains in the file. https://github.com/Stuk/jszip
+Rates are retrieved through Frankfurter from the selected official provider. Provider rate-data terms apply. https://frankfurter.dev/
+French and Kurmanji translations have not received professional native-speaker review.
+
+V7.4.1 bundled online dependencies:
+@supabase/supabase-js 2.117.2 — MIT; see licenses/supabase-js.txt.
+qrcode-generator 1.4.4 — Kazuhiko Arase, MIT; see licenses/qrcode-generator.txt and preserved source notice.
+jsQR 1.4.0 — Apache-2.0; see licenses/jsqr.txt.
+Development-only dependencies are pinned in package-lock.json and are not required by the deployed app.
