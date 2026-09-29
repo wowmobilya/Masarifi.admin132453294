@@ -1,0 +1,31 @@
+{
+  "version": "7.7.0",
+  "date": "2026-09-29",
+  "changes": {
+    "ar": [
+      "واجهة اشتراك مختصرة ومحادثات خاصة مع الإدارة للدفع والدعم داخل التطبيق.",
+      "فواتير وإشعارات بعد اعتماد الدفع، وصور للإعلانات.",
+      "مشاركة الصندوق مباشرة من البطاقة، وانضمام المدعو دون اشتراك شخصي.",
+      "لوحة إدارة متجاوبة ومراقبة المستخدمين المتصلين وغير المتصلين المسجلين."
+    ],
+    "tr": [
+      "Uygulama içi ödeme ve destek görüşmeleri, sade abonelik ekranı.",
+      "Ödeme onayından sonra fatura ve bildirim; görselli duyurular.",
+      "Kasa kartından paylaşım ve duyarlı yönetim paneli."
+    ],
+    "en": [
+      "In-app billing/support conversations and a simpler subscription experience.",
+      "Invoices and notifications after payment approval; image announcements.",
+      "Direct cashbox sharing and a responsive administration dashboard."
+    ],
+    "fr": [
+      "Conversations privées de paiement et assistance, abonnement simplifié.",
+      "Factures après validation, annonces illustrées et administration adaptative."
+    ],
+    "ku": [
+      "Axaftinên dayîn û piştgiriyê di sepanê de, abonetiyeke hêsan.",
+      "Piştî pejirandinê fatûre, ragihandinên bi wêne û rêveberiya guncaw."
+    ]
+  },
+  "edition": "admin"
+}
