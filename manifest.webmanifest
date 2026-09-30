@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "مصاريفي — الإدارة",
+  "short_name": "إدارة مصاريفي",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "ar",
+  "dir": "rtl",
+  "theme_color": "#102e35",
+  "background_color": "#f4f8f7",
+  "icons": [
+    {
+      "src": "admin-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

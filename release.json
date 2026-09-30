@@ -1,0 +1,46 @@
+{
+  "version": "7.10.2",
+  "date": "2026-09-30",
+  "changes": {
+    "ar": [
+      "تحسين الشاشات الصغيرة والتابلت والكمبيوتر والنوافذ مع تكبير الخط.",
+      "تسريع تجهيز المشاركة، حماية من الطلبات المتأخرة، وتحسين مسح QR ونسخه وحفظه.",
+      "دمج طلبات الاتصال المتكررة، مهلة للشبكة، وتحسين استئناف المزامنة.",
+      "حفظ موضع الكتابة في محادثات الإدارة وتصحيح تبديل الفلاتر والعودة بعد انقطاع الاتصال.",
+      "منع تكرار المشاركة والحفظ، وحماية النوافذ والكاميرا من نتائج الطلبات القديمة.",
+      "تحسين استعادة الاتصال الفوري والمزامنة بعد الإدخال، حفظ التعديلات المعلقة عند فشل الشبكة، وحماية رفع المرفقات من التعليق."
+    ],
+    "en": [
+      "Adaptive phone, tablet and desktop layouts with accessible dialogs.",
+      "Faster invitation preparation, late-response guards and improved QR scanning and sharing.",
+      "Coalesced network requests, network deadlines and more reliable sync resumption.",
+      "Admin drafts and cursor survive polling; latest filters win and failed views recover after reconnect.",
+      "Prevent duplicate sharing and form submissions; keep stale responses from affecting newer dialogs and camera sessions.",
+      "Recover realtime connections and resume synchronization after editing; preserve pending changes on network failures and bound attachment uploads."
+    ],
+    "tr": [
+      "Telefon, tablet ve bilgisayar ekranları için uyarlanabilir düzen ve pencereler.",
+      "Daha hızlı davet hazırlama, QR tarama, kopyalama ve paylaşım.",
+      "Birleştirilen ağ istekleri, zaman aşımı ve güvenilir eşitleme devamı.",
+      "Yönetici mesaj taslağı ve imleci korunur; filtreler ve yeniden bağlantı düzeltildi.",
+      "Yinelenen paylaşım ve form gönderimi engellendi; eski yanıtların yeni pencereleri ve kamerayı etkilemesi önlendi.",
+      "Gerçek zamanlı bağlantı ve düzenleme sonrası eşitleme iyileştirildi; bekleyen değişiklikler korunur, ek yüklemelerinde zaman aşımı uygulanır."
+    ],
+    "fr": [
+      "Affichage adaptatif pour téléphone, tablette et ordinateur.",
+      "Préparation des invitations, lecture et partage QR améliorés.",
+      "Requêtes regroupées, délais réseau et reprise de synchronisation.",
+      "Brouillons conservés et filtres et reconnexion corrigés dans l’administration.",
+      "Protection contre les partages et envois répétés, et les réponses tardives dans les fenêtres et la caméra.",
+      "Reconnexion en temps réel et synchronisation après la saisie ; modifications en attente conservées et délais pour les pièces jointes."
+    ],
+    "ku": [
+      "Dîmena li gor telefon, tablet û komputerê.",
+      "Amadekirina vexwendinê û xwendin û parvekirina QR çêtir bû.",
+      "Daxwazên torê hatin yek kirin û hevdemkirin baştir bû.",
+      "Reşnivîsa peyamê tê parastin; fîltre û girêdana nû hatin rastkirin.",
+      "Parvekirin û şandina dubare hatin astengkirin; bersivên dereng êdî pencere û kameraya nû naguhêzin.",
+      "Girêdana demrast û hevdemkirina piştî nivîsandinê çêtir bû; guhertinên li bendê tên parastin û barkirina pêvekan nawestîne."
+    ]
+  }
+}
