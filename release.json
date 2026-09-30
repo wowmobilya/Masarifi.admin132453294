@@ -1,0 +1,41 @@
+{
+  "version": "7.11.0",
+  "date": "2026-09-30",
+  "changes": {
+    "ar": [
+      "واجهة إدارة عصرية بأربع لغات: العربية والتركية والإنجليزية والفرنسية، مع النمط الليلي والنهاري.",
+      "قائمة سفلية متوازنة للهاتف والتابليت، تجمع الحركات والتقارير وتضيف الملاحظات والتذكيرات والآلة الحاسبة.",
+      "صور داخل المحادثات مع معاينة آمنة وسريعة للمرفقات.",
+      "نافذة أذونات واضحة وإشعارات مع عدّاد للأيقونة في الأجهزة الداعمة.",
+      "اكتشاف التحديثات وتجهيزها دون إعادة فتح أثناء الكتابة، مع الحفاظ على البيانات المحلية."
+    ],
+    "en": [
+      "Modern four-language admin interface with light, dark and system themes.",
+      "Balanced phone and tablet navigation with grouped activity/reports and quick reminders, notes and calculator.",
+      "Private inline chat images with fast, secure previews.",
+      "Clear permission controls and notification icon badges on supported devices.",
+      "Automatic update detection and preparation with draft-safe reopening and preserved local data."
+    ],
+    "fr": [
+      "Administration moderne en arabe, turc, anglais et français, avec thèmes clair, sombre et système.",
+      "Navigation adaptée aux téléphones et tablettes, regroupant mouvements et rapports, notes, rappels et calculatrice.",
+      "Images dans les conversations avec aperçu privé et sécurisé.",
+      "Autorisations expliquées et pastilles de notification sur les appareils compatibles.",
+      "Détection des mises à jour et réouverture après enregistrement, en conservant les données locales."
+    ],
+    "tr": [
+      "Arapça, Türkçe, İngilizce ve Fransızca modern yönetim; açık, koyu ve sistem temaları.",
+      "Telefon ve tablet için dengeli menü; hareketler, raporlar, notlar, hatırlatıcılar ve hesap makinesi.",
+      "Sohbetlerde güvenli ve hızlı özel resim önizlemeleri.",
+      "Açık izin kontrolleri ve desteklenen cihazlarda bildirim rozeti.",
+      "Taslakları koruyarak güncellemeleri bulma ve hazırlama; yerel veriler korunur."
+    ],
+    "ku": [
+      "Rûyê rêveberiyê bi çar zimanan û temayên ronî û tarî.",
+      "Menûya telefon û tabletê bi hereket, rapor, not, bîranîn û hesabkerê.",
+      "Wêneyên taybet di sohbetê de bi pêşdîtina ewle.",
+      "Destûrên zelal û hejmarê agahdariyan li ser amûrên piştgirîkirî.",
+      "Dîtina nûvekirinan bi parastina reşnivîs û daneyên herêmî."
+    ]
+  }
+}
