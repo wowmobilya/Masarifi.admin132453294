@@ -1,0 +1,41 @@
+{
+  "version": "7.15.0",
+  "date": "2026-10-01",
+  "changes": {
+    "ar": [
+      "تسجيل إيراد ومصروف فوري في الصندوق العائلي بعملته، مع حفظ الحركة دون اتصال ومنع تكرار الإرسال.",
+      "صلاحيات مستقلة يحددها المالك للإضافة والتعديل والحذف وإظهار الرصيد والحركات والمشاركين.",
+      "إشعارات باسم صاحب الحركة وقيمتها وعملتها؛ حفظ التفعيل وإعادة الاتصال تلقائيًا.",
+      "فتح كاميرا الماسح من أول ضغطة، ومشاركة التطبيق ورمزه من البطاقة الرئيسية.",
+      "رجوع متكامل في الأدمن يحافظ على المسودات ويغلق النافذة الحالية أولًا."
+    ],
+    "en": [
+      "Immediate family income and expenses in the shared cashbox currency, with durable offline queuing and safe retries.",
+      "Owner controls for adding, editing, deleting and viewing the balance, history and members.",
+      "Activity notifications include the actor, amount and currency; notification opt-in is saved and connections repair automatically.",
+      "Scanner camera opens on the first tap; public app sharing and QR are in the home card.",
+      "Complete admin Back navigation preserves drafts and closes the current dialog first."
+    ],
+    "fr": [
+      "Revenus et dépenses familiaux immédiats dans la devise de la caisse, avec sauvegarde hors ligne et renvoi sans doublon.",
+      "Le propriétaire contrôle l’ajout, la modification, la suppression et l’affichage du solde, de l’historique et des membres.",
+      "Les notifications indiquent l’auteur, le montant et la devise ; activation mémorisée et reconnexion automatique.",
+      "Caméra du scanner dès le premier appui ; partage public et QR dans la carte d’accueil.",
+      "Retour complet dans la gestion : brouillons conservés et fermeture prioritaire de la fenêtre ouverte."
+    ],
+    "tr": [
+      "Ortak kasa para biriminde anında aile geliri ve gideri; kalıcı çevrimdışı kayıt ve güvenli yeniden gönderim.",
+      "Sahip; ekleme, düzenleme, silme, bakiye, geçmiş ve üye görünürlüğünü yönetebilir.",
+      "Bildirimlerde kişi, tutar ve para birimi görünür; bildirim tercihi kaydedilir ve bağlantı otomatik yenilenir.",
+      "Tarayıcı kamerası ilk dokunuşta açılır; uygulama paylaşımı ve QR ana karttadır.",
+      "Yönetimde kapsamlı geri gezinme, taslakları korur ve önce açık pencereyi kapatır."
+    ],
+    "ku": [
+      "Dahat û lêçûn bi pereya sindoka malbatê rasterast têne tomarkirin; tomarên offline têne parastin û nayên dubarekirin.",
+      "Xwedî destûrên zêdekirin, guhertin, jêbirin û dîtina hevsengî, dîrok û endaman diyar dike.",
+      "Agahdarî navê kesî, nirx û pere nîşan dide; vebijêrka agahdariyê tê parastin û girêdan bixwe vedigere.",
+      "Kamera bi lêdana yekem vedibe; parvekirina sepanê û QR di karta destpêkê de ne.",
+      "Vegerandina rêveberiyê reşnivîsan diparêze û pêşî pencereya vekirî digire."
+    ]
+  }
+}
