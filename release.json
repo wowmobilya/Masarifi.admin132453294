@@ -1,0 +1,34 @@
+{
+  "version": "7.17.0",
+  "date": "2026-10-01",
+  "changes": {
+    "ar": [
+      "إصلاح مشاركة الصندوق وإنشاء QR والفئات والعملات، مع نافذة دعوة أوضح.",
+      "بطاقات صناديق بطابع بنكي ومشاركة عبر الشريحة، وQR بجانب عنوان الرئيسية.",
+      "الأقساط والمستحقات: جدول مواعيد، سداد جزئي وتحصيل، وحفظ ونسخ احتياطي ومزامنة.",
+      "إعدادات متجاوبة ووصول مباشر للاشتراك وحالة اتصال أبسط، مع العربية والتركية والإنجليزية والفرنسية.",
+      "تحسين بدء إرسال الإشعارات وعدّاد التطبيق، وتشخيص الإدارة والخادم دون حذف البيانات."
+    ],
+    "en": [
+      "Fixed cashbox invitation QR, category metadata and currency limits.",
+      "Bank-style cashboxes with chip sharing and a compact QR beside the home heading.",
+      "Installment schedules, partial payments and collections with backup and cloud sync.",
+      "Responsive settings, direct subscription access and clearer connection status in four languages.",
+      "Faster notification dispatch, badge fixes and safer, more detailed admin diagnostics."
+    ],
+    "tr": [
+      "Kasa daveti QR, kategori verileri ve para birimi limitleri düzeltildi.",
+      "Çip üzerinden paylaşım ve başlığın yanında QR ile banka tarzı kasalar.",
+      "Taksit takvimi, kısmi ödeme ve tahsilat; yedekleme ve bulut eşitleme.",
+      "Dört dilde uyumlu ayarlar, doğrudan abonelik erişimi ve açık bağlantı durumu.",
+      "Daha hızlı bildirim gönderimi, rozet düzeltmeleri ve ayrıntılı yönetim tanılaması."
+    ],
+    "fr": [
+      "QR d’invitation, métadonnées des catégories et plafonds monétaires corrigés.",
+      "Caisses au style bancaire avec partage par la puce et QR compact près du titre.",
+      "Échéanciers, versements partiels et encaissements avec sauvegarde et synchronisation.",
+      "Réglages adaptatifs, accès direct à l’abonnement et connexion claire en quatre langues.",
+      "Envoi accéléré des notifications, correction des pastilles et diagnostic administratif détaillé."
+    ]
+  }
+}
