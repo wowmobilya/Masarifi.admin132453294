@@ -1,7 +1,0 @@
-Masarifi V5 builds upon the user-supplied WOW Expenses V4 application.
-Original application credits retained: WOW Mobilya; review Hasan Al-Halou; original development Eng. Al-Mutaz Billah Haj Shaaban.
-The user supplied the brand image through https://chatgpt.com/s/m_6ab67083e29481919e4759dba635c1c2 . Icons are resized copies, not redesigned imagery.
-
-Masarifi 8.0 admin bundled dependency:
-@supabase/supabase-js 2.117.2 — MIT; see licenses/supabase-js.txt and preserved vendor notice.
-Only deployed assets and required license notices are included. Development and test files are excluded.
