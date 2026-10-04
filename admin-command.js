@@ -81,7 +81,7 @@
   const t = key => text[key]?.[{ar:0,en:1,tr:2,fr:3}[locale()] ?? 0] || key;
   const errorText = error => t(Object.prototype.hasOwnProperty.call(text,error?.message)?error.message:'backend_unavailable');
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const date = value => value && Number.isFinite(Date.parse(value)) ? new Date(value).toLocaleString(locale()) : '—';
+  const date = value => value && Number.isFinite(Date.parse(value)) ? new Date(value).toLocaleString(locale(),{numberingSystem:'latn'}) : '—';
   const button = (action, label, extra = '') => `<button type="button" data-command="${action}" ${extra}>${escape(label)}</button>`;
   const metric = (label, value, scope = '') => `<article class="command-metric"><strong>${value === null ? '—' : escape(value)}</strong><span>${escape(label)}</span>${scope ? `<small>${escape(scope)}</small>` : ''}</article>`;
   let bridge, pane, active = 'overview', owner = null, selection = new Set(), tableSignature = '', tableNode = null, aiState = null, aiBusy = false, serial = 0, lastFocus = null, renderTimer = null, reviewing = null, dirty = false;
@@ -190,3 +190,4 @@
   if(root.document){if(root.document.readyState==='loading')root.document.addEventListener('DOMContentLoaded',init,{once:true});else init();}
   return Object.freeze({csv,operations,validateConfig,validateGrant,requestAI,open,hasDraft:()=>!!(dirty||reviewing||aiBusy)});
 });
+

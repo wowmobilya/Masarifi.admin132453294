@@ -1,19 +1,46 @@
-/* Masarifi 8.5 appearance. Load after every existing stylesheet. */
+/* Masarifi 8.7 Admin presentation. Load after every existing stylesheet. */
+:root {
+  color-scheme: light;
+  --ink: #17362f;
+  --muted: #586f67;
+  --line: #dce7e1;
+  --surface: #fff;
+  --admin-page: #f4f7f5;
+  --admin-raised: #eef5f1;
+  --admin-soft: #e1f4ee;
+  --admin-accent: #087f77;
+  --admin-accent-ink: #076f67;
+  --admin-on-accent: #fff;
+  --admin-shadow: 0 5px 22px #173c2e05;
+  --danger: #bd314b;
+  --admin-radius-panel: 16px;
+  --admin-radius-dialog: 20px;
+}
+
+/* Match the client workspace's black and dark-silver palette at the same specificity as
+   the legacy Admin theme. A later html[data-theme] rule alone cannot win. */
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --ink: #f2f3f4;
-  --muted: #b5b9bf;
-  --line: #41464b;
-  --surface: #191b1d;
-  --green: #d8dde3;
-  --admin-page: #101112;
-  --admin-raised: #25282b;
-  --admin-soft: #2c3035;
-  --admin-accent: #d8dde3;
-  --admin-on-accent: #101112;
-  --admin-shadow: 0 5px 22px #00000018;
+  --ink: #f2f2f2;
+  --muted: #bdbdbd;
+  --line: #4b4b4b;
+  --surface: #171717;
+  --admin-page: #080808;
+  --admin-raised: #242424;
+  --admin-soft: #303030;
+  --admin-accent: #d2d2d2;
+  --admin-accent-ink: #d2d2d2;
+  --admin-on-accent: #080808;
+  --admin-shadow: 0 8px 24px #00000026;
   --danger: #ff9bac;
-  /* Shared modules use the user-app names as well as admin names. */
+  --mx-shadow: 0 28px 90px #0008;
+}
+
+/* Shared dialogs and main Admin screens resolve to one set of primitives. */
+:root,
+:root[data-theme="dark"] {
+  /* Small selected labels need stronger contrast than decorative accents. */
+  --green: var(--admin-accent-ink);
   --bg: var(--admin-page);
   --panel: var(--surface);
   --panel2: var(--admin-raised);
@@ -29,10 +56,9 @@
   --mx-line: var(--line);
   --mx-soft: var(--admin-raised);
   --mx-accent: var(--admin-accent);
-  --mx-shadow: 0 28px 90px #0008;
 }
 
-:root[data-theme="dark"] :is(button, input, textarea, select, a):focus-visible {
+:root :is(button, input, textarea, select, a):focus-visible {
   outline: 3px solid var(--admin-accent);
   outline-offset: 3px;
 }
@@ -57,7 +83,7 @@
   box-shadow: 0 10px 40px #0005;
 }
 
-/* Dashboard presence and subscription cards share charcoal surfaces. */
+/* Dashboard presence cards share raised charcoal surfaces. */
 :root[data-theme="dark"] .primary-cards .dashboard-metric:first-child {
   background: var(--admin-raised);
   color: var(--ink);
@@ -94,10 +120,104 @@
 /* Keep warning/error states distinct and readable against charcoal. */
 :root[data-theme="dark"] .health-table-list .health-missing,
 :root[data-theme="dark"] .connection-detail.warning {
-  color: #edbd7f;
+  color: var(--ink);
 }
 
-html[data-theme="dark"]{--bg:#17212f;--panel:#253449;--panel2:#2d3e54;--text:#f1f5fb;--muted:#bdcadb;--line:#43556c;--accent:#8aaef0;--accent-soft:#334a6a;--income:#b4c9f3}
+.panel,
+.data-usage-row,
+.command-metric,
+.command-queue,
+.command-ai-form,
+.settings-intro-card,
+.health-hero,
+.workspace-welcome {
+  border-radius: var(--admin-radius-panel);
+}
+dialog.interaction-dialog[open],
+.mx-dialog,
+.np-dialog,
+.command-dialog {
+  border-radius: var(--admin-radius-dialog);
+}
+.mx-dialog .mx-primary {
+  background: var(--admin-accent);
+  border-color: var(--admin-accent);
+  color: var(--admin-on-accent);
+}
+
+/* Keep content in the flow. Tables and tabs retain their existing scroll
+   owners; long translated labels and account IDs may wrap instead. */
+.command-open-button {
+  white-space: normal;
+  min-width: 0;
+  max-width: 100%;
+}
+.command-table-tools,
+.command-entitlements article,
+.command-queue>button {
+  flex-wrap: wrap;
+}
+.command-entitlements span {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.command-review>div {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+@media (min-width: 651px) and (max-width: 900px) {
+  .primary-cards,
+  .secondary-cards {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .command-metrics,
+  .command-form-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+@media (max-width: 480px) {
+  .command-review>div {
+    grid-template-columns: minmax(0,1fr);
+    gap: 4px;
+  }
+}
+
+/* Neutral night detail overrides. */
+/* Legacy service-state styles otherwise outrank generic panel backgrounds. */
+:root[data-theme=dark] .thread-row.selected {
+  background: var(--admin-soft);
+  border-color: var(--admin-accent);
+}
+:root[data-theme=dark] .service-message,
+:root[data-theme=dark] .service-message.system {
+  background: var(--admin-raised);
+  border-color: var(--line);
+}
+:root[data-theme=dark] .service-message.admin {
+  background: var(--admin-soft);
+  border-color: var(--line);
+}
+:root[data-theme=dark] .badge.paused {
+  background: var(--admin-raised);
+  color: var(--ink);
+}
+:root[data-theme=dark] .connection-detail.offline { color: var(--muted); }
+:root[data-theme=dark] .admin-connection-button.offline .connection-dot,
+:root[data-theme=dark] .health-status[data-state=warning]::before,
+:root[data-theme=dark] .health-status[data-state=stale]::before { background: var(--admin-accent); }
+/* End neutral night detail overrides. */
+
+/* Compact app identity remains visible on small phones without forcing text outside the header. */
+.brand-row { min-width: 0; }
+.brand-row > div:last-child { min-width: 0; }
+.brand-row h1 { overflow-wrap: anywhere; line-height: 1.25; }
+@media(max-width:650px) {
+ .admin-brand-mark { display: grid; width: 28px; height: 28px; border-radius: 9px; }
+ .admin-brand-mark svg { width: 19px; height: 19px; }
+ .brand-row { gap: 6px; }
+}
 
 /* Keep header actions usable without shrinking touch targets on phones. */
 header .header-actions .admin-icon-button,

@@ -1,27 +1,31 @@
 {
-  "version": "8.7.0",
+  "version": "8.7.1",
   "date": "2026-10-04",
   "changes": {
     "ar": [
-      "توحيد أزرار رأس الإدارة وأحجام أيقوناتها، وترتيب الرأس على الهواتف الضيقة دون تصغير مساحة اللمس.",
-      "هوية تحكم مصاريفي بأيقونة المحفظة والإعدادات ولغات التثبيت الأربع.",
-      "ألوان داكنة أوضح وتشخيص صريح لتوفر خدمة الذكاء الاصطناعي."
-    ],
-    "tr": [
-      "Yönetim başlığı dokunma alanları ve simgeleri eşitlendi; dar telefonlarda düğmeler küçültülmeden düzenlendi.",
-      "Cüzdan ve ayar simgesiyle Masarifi Kontrol kimliği ve dört kurulum dili.",
-      "Daha açık koyu tema ve yapay zekâ hizmetinin kullanılabilirlik durumu."
+      "ألوان سوداء وفضية داكنة متسقة، مع حقول وبطاقات وحوارات متجاوبة.",
+      "تحسين التفاف الأزرار والعناوين والبيانات على الهاتف والتابلت دون إخفاء أعمدة الجداول.",
+      "أرقام 0–9 في اللغات الأربع وتصحيح ترجمة أدوات بيانات المستخدمين.",
+      "تحديثات تتحقق من البناء الفعلي، وتوضح مراحل التنفيذ، وتحمي التغييرات غير المحفوظة."
     ],
     "en": [
-      "Normalize admin header touch targets and glyphs; use a wrapping phone header without shrinking controls.",
-      "Masarifi Control identity with wallet/settings icon and four installation languages.",
-      "Clearer dark surfaces and explicit cloud AI availability diagnostics."
+      "Consistent black and dark-silver surfaces with responsive fields, cards and dialogs.",
+      "Improved button, heading and data wrapping on phones and tablets without hiding table columns.",
+      "0–9 digits across four languages and corrected user-data tool translations.",
+      "Updates verify the actual build, show truthful stages and preserve unsaved changes."
+    ],
+    "tr": [
+      "Tutarlı siyah ve koyu gümüş yüzeyler; uyumlu alanlar, kartlar ve iletişim kutuları.",
+      "Tablo sütunlarını gizlemeden telefon ve tabletlerde düğme, başlık ve veri yerleşimi iyileştirildi.",
+      "Dört dilde 0–9 rakamları ve kullanıcı verisi araçlarının düzeltilmiş çevirileri.",
+      "Güncellemeler gerçek yapı kimliğini doğrular, doğru aşamaları gösterir ve kaydedilmemiş değişiklikleri korur."
     ],
     "fr": [
-      "Uniformisation des cibles tactiles et des icônes ; en-tête adaptatif sans réduction des boutons.",
-      "Identité Contrôle Masarifi, icône portefeuille/réglages et quatre langues d’installation.",
-      "Thème sombre plus clair et diagnostic explicite de disponibilité du service IA."
+      "Surfaces noires et argent foncé cohérentes, champs, cartes et dialogues adaptatifs.",
+      "Meilleur retour à la ligne des boutons, titres et données sur mobile et tablette, sans masquer de colonnes.",
+      "Chiffres 0–9 dans les quatre langues et correction des traductions des outils de données utilisateur.",
+      "Mises à jour avec vérification du build réel, étapes exactes et protection des modifications non enregistrées."
     ]
   },
-  "build": "20261004-ui1"
+  "buildId": "7cb85cfb994a5786eaf153efb9d27a2ae042accb1d717fab80c1bf21f2cd687f"
 }

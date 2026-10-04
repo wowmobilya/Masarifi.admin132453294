@@ -6,3 +6,22 @@
 .mx-heading,.mx-actions{flex-shrink:0}.mx-permission>div{min-width:0}.mx-brand{overflow-wrap:anywhere}.mx-dialog button{touch-action:manipulation}
 .mx-update-banner{top:calc(var(--interaction-top,0px) + 12px + env(safe-area-inset-top,0px));width:min(540px,calc(100vw - 24px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)))}
 @media(max-width:320px){.mx-dialog{padding:14px}.mx-permission{grid-template-columns:28px minmax(0,1fr);gap:8px}.mx-permission-icon{width:28px;height:32px}.mx-actions>button{min-width:0}.mx-update-banner{gap:8px;flex-wrap:wrap}.mx-update-banner>button{width:100%}}
+
+/* Build verification owns status; presentation never invents percentage progress. */
+.mx-update-card{padding:20px;border-radius:18px;min-width:0}
+.mx-update-card>strong{font-size:clamp(1.35rem,5vw,1.8rem);font-variant-numeric:tabular-nums}
+.mx-build-id{display:block;max-width:100%;overflow-wrap:anywhere;font:500 .68rem/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--mx-muted);margin-block-start:4px}
+.mx-version-next{display:inline-flex;align-items:center;gap:7px;flex-wrap:wrap;max-width:100%;direction:ltr;unicode-bidi:isolate}
+.mx-version-next .mx-build-id{margin:0}
+.mx-update-progress{display:block;inline-size:100%;max-width:100%;height:7px;margin-block:16px 0;accent-color:var(--mx-accent)}
+.mx-update-stages{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;padding:0;margin:18px 0}
+.mx-update-stage{display:flex;align-items:flex-start;gap:7px;min-width:0;overflow-wrap:anywhere;font-size:.72rem;line-height:1.6;padding:10px 8px;border:1px solid var(--mx-line);border-radius:12px;color:var(--mx-muted);background:var(--mx-bg)}
+.mx-update-stage::before{content:'';flex:none;inline-size:7px;block-size:7px;border-radius:50%;border:1px solid currentColor;margin-block-start:5px}
+.mx-update-stage[data-status=active]{background:var(--mx-soft);color:var(--mx-text);border-color:var(--mx-accent);font-weight:700}
+.mx-update-stage[data-status=done]::before{background:currentColor}
+.mx-update-success{display:flex;align-items:center;gap:9px;color:var(--mx-text);font-weight:650}
+.mx-update-success svg{inline-size:20px;block-size:20px;flex:none}
+.mx-update-card[data-update-state=failed]{border-color:var(--expense,#a33e48)}
+.mx-update-card[data-update-state=offline]{border-style:dashed}
+@media(max-width:480px){.mx-update-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.mx-update-card{padding:16px}.mx-version-next{margin-inline-start:0;margin-block-start:8px;display:flex}}
+@media(prefers-reduced-motion:reduce){.mx-update-stage,.mx-update-success{animation:none!important;transition:none!important}}

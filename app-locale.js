@@ -20,7 +20,7 @@ function updateMetadata(value){
  document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.title=names[application][lang];
  const manifest=document.querySelector('link[rel="manifest"]');if(manifest)manifest.setAttribute('href',new URL('manifest.'+lang+'.webmanifest',manifestDirectory).href);
  meta('application-name',names[application][lang]);meta('apple-mobile-web-app-title',shortNames[application][lang]);
- meta('theme-color',document.documentElement.dataset.theme==='dark'?'#17212f':'#f3f7f6');
+ meta('theme-color',document.documentElement.dataset.theme==='dark'?'#080808':'#f3f7f6');
  return lang;
 }
 function publicURL(value){const lang=normalize(value)||phoneLanguage(),entry=application==='admin'&&/\/admin\.html$/i.test(root.location.pathname)?'./admin.html':'./',url=new URL(entry,root.location.href);if(!['https:','http:'].includes(url.protocol))throw Error('v20AppLinkUnavailable');url.username='';url.password='';url.search='';url.hash='';return url.href;}
@@ -46,3 +46,4 @@ updateMetadata(initial);
 root.document.addEventListener('masarifi:locale',()=>updateMetadata(root.MasarifiAdminLocale?.locale||root.App?.prefs?.language||initial));
 root.document.addEventListener('masarifi:theme',()=>updateMetadata(root.MasarifiAdminLocale?.locale||root.App?.prefs?.language||initial));
 })(window);
+
