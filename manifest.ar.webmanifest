@@ -1,8 +1,8 @@
 {
   "id": "./masarifi-admin",
-  "name": "مصاريفي — الإدارة",
-  "short_name": "إدارة مصاريفي",
-  "start_url": "./?lang=ar",
+  "name": "تحكم مصاريفي",
+  "short_name": "تحكم مصاريفي",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "lang": "ar",
@@ -10,12 +10,6 @@
   "theme_color": "#f3f7f6",
   "background_color": "#f3f7f6",
   "icons": [
-    {
-      "src": "admin-icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
     {
       "src": "icon-192.png",
       "sizes": "192x192",

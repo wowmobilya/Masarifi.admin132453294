@@ -96,3 +96,5 @@
 :root[data-theme="dark"] .connection-detail.warning {
   color: #edbd7f;
 }
+
+html[data-theme="dark"]{--bg:#17212f;--panel:#253449;--panel2:#2d3e54;--text:#f1f5fb;--muted:#bdcadb;--line:#43556c;--accent:#8aaef0;--accent-soft:#334a6a;--income:#b4c9f3}

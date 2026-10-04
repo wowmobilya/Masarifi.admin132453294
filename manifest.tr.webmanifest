@@ -1,8 +1,8 @@
 {
   "id": "./masarifi-admin",
-  "name": "Masarifi — Yönetim",
-  "short_name": "Masarifi Yönetim",
-  "start_url": "./?lang=tr",
+  "name": "Masarifi Kontrol",
+  "short_name": "Masarifi Kontrol",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "lang": "tr",
@@ -10,12 +10,6 @@
   "theme_color": "#f3f7f6",
   "background_color": "#f3f7f6",
   "icons": [
-    {
-      "src": "admin-icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
     {
       "src": "icon-192.png",
       "sizes": "192x192",
