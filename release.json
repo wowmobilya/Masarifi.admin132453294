@@ -1,0 +1,38 @@
+{
+  "version": "8.6.0",
+  "date": "2026-10-04",
+  "changes": {
+    "ar": [
+      "صفحات مستقلة للميزانيات والتصنيفات، مع البحث والتصنيفات الفرعية والأيقونات والألوان والتثبيت والأرشفة الآمنة.",
+      "حدود شهرية عامة وحسب التصنيف والعملة؛ نسب متحركة وتنبيه قرب الحد ومقارنة عادلة بالشهر السابق.",
+      "إضافة سريعة مدمجة في الرئيسية، واختيار صريح للتصنيف في الحركات والإيصالات والأقساط والصندوق المشترك.",
+      "تحليل أكثر التصنيفات صرفًا مع تجميع الفروع دون تكرار، وفصل العملات والرسوم وحماية الأقسام المقفلة.",
+      "حفظ الميزانيات والتصنيفات مع حماية التعارضات والمزامنة والنسخ الاحتياطية القديمة.",
+      "إصلاح تداخل عمليات دعم الإدارة، ومسح النتائج القديمة، وعرض أسماء باقات الفواتير باللغة المختارة."
+    ],
+    "en": [
+      "Dedicated budget and category pages with search, subcategories, icons, colours, quick pins and safe archiving.",
+      "Monthly overall and category limits by currency, animated percentages, near-limit alerts and fair prior-month comparison.",
+      "Compact home quick entry and explicit category choice for entries, receipts, installments and shared funds.",
+      "Highest-spending category families without duplicates, separate currencies and fees, and protected locked sections.",
+      "Budget and category saves protect conflicts, sync merges and older backups.",
+      "Fixed overlapping admin support operations, stale results and invoice plan names in the selected language."
+    ],
+    "tr": [
+      "Arama, alt kategoriler, simgeler, renkler, hızlı sabitleme ve güvenli arşivleme içeren ayrı bütçe ve kategori sayfaları.",
+      "Para birimine göre aylık genel ve kategori limitleri, hareketli yüzdeler, limite yaklaşma uyarıları ve adil önceki ay karşılaştırması.",
+      "Ana sayfada kompakt hızlı ekleme; işlem, fiş, taksit ve ortak fon için açık kategori seçimi.",
+      "Alt kategorileri tekrar saymadan en çok harcanan kategori grupları; ayrı para birimleri, ücretler ve kilitli bölüm koruması.",
+      "Bütçe ve kategori kaydında çakışma, eşitleme birleştirmesi ve eski yedek koruması.",
+      "Yönetici desteğindeki çakışan işlemler ve eski sonuçlar düzeltildi; fatura paket adları seçili dilde gösterilir."
+    ],
+    "fr": [
+      "Pages dédiées aux budgets et catégories avec recherche, sous-catégories, icônes, couleurs, épingles et archivage sûr.",
+      "Plafonds mensuels globaux et par catégorie et devise, pourcentages animés, alertes de seuil et comparaison mensuelle équitable.",
+      "Ajout rapide compact sur l’accueil et choix explicite de catégorie pour opérations, reçus, échéanciers et fonds partagés.",
+      "Classement des familles de dépenses sans doublons, devises et frais séparés, sections verrouillées protégées.",
+      "Enregistrement des budgets et catégories avec protection des conflits, fusion de synchronisation et anciens sauvegardes.",
+      "Correction des opérations de support administrateur simultanées et résultats obsolètes ; noms des forfaits de facture dans la langue choisie."
+    ]
+  }
+}
