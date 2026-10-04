@@ -98,3 +98,21 @@
 }
 
 html[data-theme="dark"]{--bg:#17212f;--panel:#253449;--panel2:#2d3e54;--text:#f1f5fb;--muted:#bdcadb;--line:#43556c;--accent:#8aaef0;--accent-soft:#334a6a;--income:#b4c9f3}
+
+/* Keep header actions usable without shrinking touch targets on phones. */
+header .header-actions .admin-icon-button,
+header .menu-toggle {
+  width:44px;min-width:44px;height:44px;min-height:44px;
+  flex:0 0 44px;padding:10px;box-sizing:border-box;
+}
+header .header-actions .admin-icon-button svg,
+header .menu-toggle svg {width:20px;height:20px;flex:none}
+header .brand-row {min-width:0}
+header .brand-row > div:last-child {min-width:0}
+@media(max-width:420px) {
+  header {flex-wrap:wrap;gap:10px;padding:12px}
+  header .brand-row {flex:1 1 100%;gap:10px}
+  header .brand-row h1 {font-size:15px;overflow-wrap:normal;line-height:1.5}
+  header .header-actions {width:100%;justify-content:flex-end;gap:8px}
+  header .header-actions > button {flex:none}
+}

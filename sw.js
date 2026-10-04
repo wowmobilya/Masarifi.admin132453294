@@ -1,7 +1,7 @@
 importScripts('./badge-worker.js');
 /* Cache only the static admin shell. API responses and private records never enter this cache. */
 const RUNTIME_VERSION='8.7.0';
-const ADMIN_CACHE_PREFIX='masarifi-admin-runtime:'+self.registration.scope+':',ADMIN_CACHE=ADMIN_CACHE_PREFIX+RUNTIME_VERSION+'-f3185b7d3322';
+const ADMIN_CACHE_PREFIX='masarifi-admin-runtime:'+self.registration.scope+':',ADMIN_CACHE=ADMIN_CACHE_PREFIX+RUNTIME_VERSION+'-ui1-20261004';
 const ADMIN_STATIC_ENABLED=!new URL(self.location.href).pathname.endsWith('/admin/push-sw.js');
 const ADMIN_FILES=["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png","./admin-icon.svg","./notification-badge.png","./app-experience.js","./app-experience.css","./badge-worker.js","./notification-preferences.js","./notification-preferences.css","./app.css","./vendors.js","./admin-command.js","./admin-command.css","./interaction-shell.js","./interaction-shell.css","./user-usage.js","./user-usage.css","./app-locale.js","./manifest.ar.webmanifest","./manifest.tr.webmanifest","./manifest.en.webmanifest","./manifest.fr.webmanifest","./theme-polish.css","./release.json"];
 self.addEventListener('install',event=>{if(ADMIN_STATIC_ENABLED)event.waitUntil(caches.open(ADMIN_CACHE).then(cache=>cache.addAll(ADMIN_FILES.map(file=>new Request(new URL(file,self.registration.scope),{cache:'reload'})))));});
